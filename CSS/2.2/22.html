@@ -1,0 +1,128 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<meta charset="UTF-8" />
+	<title>Uppgift 2.2 Text och Listor</title>
+</head>
+	<body>
+			<h1>Uppgift 2.2 Text och Listor</h1>				
+			<ul>
+				<li>
+					<h3>Text</h3>
+					Med attributet color så kan man sätta färger på text, antingen genom att skriva color: white;, eller color: #FFFFFF; eller color: rgb(255,255,255).
+					<p class="colorExample">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut pellentesque risus.
+					</p>
+				</li>
+				<li>
+					<h3>Färg</h3>
+					Font attributet är den generella regeln för vilket teckensnitt man vill använda, vilken storlek osv.
+					<br><br>
+					font-family: Detta attribut bestämmer vilket teckesnitt man vill använda sig av.
+					<br>
+					font-stretch: Detta attribut stöjdjs inte längre i CSS3. Men det var tänkt att man skulle kunna göra texten bredare eller smalare.
+					<br>
+					font-size: Här bestämmer du vilken stolek texten skall ha. Där du kan använda dig av px, pc, pt, em osv.
+					<br>
+					font-size-adjust: Det är meningen att man skall kunna manipulera textstorleken på en skala med ärdt värde som referens.
+					<br>
+					font-style: Detta attribut bestämmer man om teckensnittet skall vara i fet, normal eller snett.
+					<br>
+					font-variant: detta attributets värde small-caps ser till att alla lowercase okstäver konverteras till uppercase. Men de första tecknet i orden är alltid större än de tecken som följer.
+					<br>
+					font-weight: Detta attribut bestämmer om du vill ha fet eller normal text.
+					<br>
+					<br>
+					Detta är ett exempel som använder sig av alla dessa regler.
+					<p class="fontExample">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut pellentesque risus.
+					</p>
+				</li>
+				<li>
+					<h3>Text</h3>
+					Dessa attribute är till för att manipulera teckesnittet.
+					<br>
+					<br>
+					letter-spacing: Med detta attribut så bestämmer man själv vad avståndet mellan bokstäverna skall vara i pixlar.
+					<br>
+					<br>
+					word-spacing: Med detta attribut så bestämmer man själv vad avståndet mellan orden skall vara
+					<br>
+					<br>
+					line-height: Detta attribut bestämmer hur mycket utrymme texten skall ta på höjden. Default värde är 100%, då tar den upp sin givna plats.
+					<br>
+					<br>
+					text-align: Bestämmer hur texten skall linjera, centrum, höger eller vänster. Standarnd är vänster.
+					<br>
+					<br>
+					text-decoration: Bestämmer om texten skall dekoreras på något sätt. Detta är vanligt att man sätter till none på länkar som har ett default värde att dekoreras med underline.
+					<br>
+					<br>
+					text-shadow: Ger texten en skugga, detta är nytt i CSS3.
+					<br>
+					<br>
+					text-indent: Ger en indentering på den första raden i ett stycke.
+					<br>
+					<br>
+					text-transform: Detta värde konverterar texten i fråga till att antingen vara Versaler, Gemener eller kapitäler.
+					<br>
+					<br>
+					white-space: Detta attribut gör så att man inte "wrappar" texten som standardvärdet på en p-tag gör, genom att radbryta där utrymmet tar slut.
+					<br>
+					<br>
+					Detta är ett exempel som använder sig av alla dessa regler.
+					<p class="textExample">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut pellentesque risus.
+						<br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut pellentesque risus.
+					</p>
+				</li>
+				<li class="pieceExample">
+					<h3>Stycken</h3>
+					Med Pseudoklasser kan man komma åt väldigt specifika element i ditt DOM-dokument som ger ett dynamisk anpassat stylesheet.
+					<br>
+					<br>
+					p:first-line: Ger en möjlighet att manipulera den första raden i ett stycke.
+					<br>
+					<br>
+					p:first-letter: Ger en möjlighet att manipulera den första bokstaven i ett stycke.
+					Detta är ett exempel som använder sig av alla dessa regler.
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut pellentesque risus.
+						<br>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut pellentesque risus.
+					</p>
+				</li>
+				<li>
+					<h3>Listor</h3>
+					Listor är ett av mina favorit element, de är kraftiga och kan åstakomma många användbara element. Jag bygger isortsätt alla mina menyer och bild-snurror med en lista som grund.
+					<br>
+					<br>
+					list-style: Detta är attributet som funkar som en genväg då du kan ange all stilinformation om listan på en rad.
+					<br>
+					<br>
+					list-style-image: Attributet sätter en bild som markör för vajre list element.
+					<br>
+					<br>
+					list-style-position: Besstämmer var element markören i en lista skall positioneras, innanför eller utanför kanten.
+					<br>
+					<br>
+					list-style-type: Bestämmer vilken typ av list element markör man vill ha.
+					<br>
+					<br>
+					marker-offset: Bestämmer avståndet mellan listelement markören och dess närmaste kant.
+					<br>
+					<br>
+					Detta är ett exempel som använder sig av alla dessa regler.
+					<ul class="ulExample">
+						<li>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut pellentesque risus.
+						</li>
+						<li>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam ut pellentesque risus.
+						</li>
+					</ul>
+				</li>
+			</ul>
+	</body>
+</html>

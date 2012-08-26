@@ -1,0 +1,9 @@
+#photos{
+	position: relative;
+}
+#photos img{
+	position: relative;
+	float: left;
+	height: 200px;
+	margin: 10px;
+}

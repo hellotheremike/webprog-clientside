@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js" type="text/javascript"></script>
+  	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="javascript.js" type="text/javascript"></script>
+	<meta charset="UTF-8" />
+	<title></title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Userinfo</legend>
+			<p><input type="text" id="text-1" placeholder="Firstname" required="required" title="Firstname" /></p>
+			<p><input type="text" id="text-2" placeholder="Lastname" required="required" title="Lastname"/></p>
+		</fieldset>
+		<fieldset>	
+			<legend>Expertise</legend>	
+			<p><input type="radio" name="field" value="server" /> Server</p><br>
+			<p><input type="radio" name="field" value="client" /> Client</p><br>
+		</fieldset>
+		<fieldset>
+		<legend>Client</legend>
+			<p><input type="checkbox" name="client" value="HTML" /> I know HTML</p><br>
+			<p><input type="checkbox" name="client" value="CSS" /> I know CSS</p><br>
+			<p><input type="checkbox" name="client" value="Javacript" /> I know Javacript</p><br>
+		</fieldset>
+		<fieldset>
+		<legend>Server</legend>
+			<p><input type="checkbox" name="server" value="PHP" /> I know PHP</p><br>
+			<p><input type="checkbox" name="server" value="C#" /> I know C#</p><br>
+			<p><input type="checkbox" name="server" value="Django" /> I know Django</p><br>
+		</fieldset>
+		<fieldset>
+			<input type="button" value="Validate" id="validate">
+		</fieldset>
+	</form>
+
+</body>
+</html>

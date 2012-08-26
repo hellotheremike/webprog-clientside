@@ -1,0 +1,17 @@
+p{
+	padding: 5px;
+	margin: 2px;
+	display: inline-block;
+	background: transparent;
+	border-radius: 3px;
+}
+
+p.active{
+	background: #F2EA91;
+}
+p.confirmed{
+	background: #91F298;
+}
+p.error{
+	background: #F29891;
+}

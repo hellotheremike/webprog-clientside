@@ -1,0 +1,114 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+*{    
+	margin:0;
+    padding:0;
+}
+#tab {
+	font-family:'Droid Sans';
+	font-size: 12px;
+	width: 700px;
+	margin: 50px auto;
+}
+#ContentSlide{
+	position: relative;
+	width: 700px;
+	height:300px;
+	padding: 2px;
+	margin: 50px auto;
+	background-color: #DDD;
+	border-radius: 5px;
+	overflow: hidden;
+	border:1px solid #838383;
+}
+#ContentSlide ul{
+	padding: 0;
+	margin:  0px;
+	width: 9999px;
+	height: 300px;
+	list-style: none;
+	position: absolute;
+	background-color: transparent;
+}
+#ContentSlide ul li{
+	display: inline-block;
+	float:left;
+	height: 300px;
+	width: 700px;
+	overflow: hidden;
+	padding: 10px;
+	font-family:'Droid Sans';
+	z-index: 1;
+	text-align:center;
+	font-size: 40px;
+}
+#ContentSlide ul li .icon{
+	font-size:120px;
+	color: #FFF;
+	margin-top: 30px;
+	text-shadow: 0px 0px 10px rgba(0,0,0, 0.3);
+	cursor: default;
+}
+
+.icon { 
+   font-family: 'Web Symbols'; 
+   font-weight: normal; 
+   font-style: normal; 
+   font-size: 25px;
+   z-index: 2;
+   cursor: pointer;
+   transition: text-shadow 0.2s;
+	-moz-transition: text-shadow 0.2s;
+	-webkit-transition: text-shadow 0.2s;
+	-o-transition: text-shadow 0.2s;
+}
+.icon:hover{
+	text-shadow: 0px 0px 10px rgba(0,0,0, 0.3);
+	transition: text-shadow 0.3s;
+	-moz-transition: text-shadow 0.3s;
+	-webkit-transition: text-shadow 0.3s;
+	-o-transition: text-shadow 0.3s;
+}
+#next{
+	top: 130px;
+	position: absolute;
+	width:30px;
+	height: 40px;
+	right: 0px;
+	text-align: center;
+	line-height: 40px;
+}
+#hover{
+	width: 700px;
+	text-align: center;
+	height: 40px;
+	margin: 20px auto;
+	font-family:'Droid Sans';
+}
+
+#back{
+	top: 130px;
+	position: absolute;
+	width:30px;
+	height: 40px;
+	left: 0px;
+	text-align: center;
+	line-height: 40px;
+}
+
+.tip{
+	display: none;
+    position:absolute;
+    background-color:#2C7DD4;
+    padding:2px;
+    border:1px solid #000;
+    border-radius: 4px;
+}
+
+.tip p{
+	font-family:'Droid Sans';
+	font-size: 14px;
+    color:#FFF;
+    padding:3px 5px;
+    line-height: 30px;
+    border-radius: 3px;
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>podCast411</title>
+    <description>Mikaels Podcast uppgift</description>
+    <link>http://www.site.com</link>
+    <language>SV</language>
+    <copyright>Copyright Mikael Hallgren 2012</copyright>
+
+    <item>
+      <title>Podcast avsnitt 1</title>
+      <link>http://www.hubharp.com/web_sound/BachGavotteShort.mp3</link>
+      <description> 
+        Mitt första podcast avsnitt som är ett ljudklipp från nätet.
+      </description>
+      <enclosure url="http://www.hubharp.com/web_sound/BachGavotteShort.mp3" length="369" type="audio/mpeg"/>
+      <category>Podcasts</category>
+    </item>
+
+    <item>
+      <title>Podcast avsnitt 2</title>
+      <link>http://www.hubharp.com/web_sound/BachGavotteShort.mp3</link>
+      <description> 
+        Mitt andra podcast avsnitt som är ett Videoklipp från nätet.
+      </description>
+      <enclosure url="http://www.808.dk/pics/video/gizmo.mp4" length="385" type="video/mp4"/>
+      <category>Podcasts</category>
+    </item>
+  </channel>
+
+</rss>

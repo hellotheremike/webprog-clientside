@@ -1,0 +1,36 @@
+.colorExample{color: orange;}
+.fontExample{
+	font-family: Arial;
+	font-size: 15px;
+	font-size-adjust: 1.2;
+	font-style: oblique;
+	font-weight: bold;
+	font-variant: small-caps;
+}
+.textExample{
+	text-decoration: underline;
+	text-shadow: 0 0px 6px #A3D9FF;
+	letter-spacing: 3px;
+	word-spacing: 5px;
+	line-height: 250%;
+	text-align: left;
+	text-indent:20px;
+	text-transform:lowercase;
+	white-space: nowrap;
+}
+.pieceExample p:first-line{
+	font-size: 18px;
+	color: #fff;
+}
+.pieceExample p:first-letter{
+	background: #000;
+	color: #fff;
+	font-weight: bold;
+}
+.ulExample{
+	margin-left: 20px;
+	list-style-image: url("lock.png");
+	list-style-position: inside;
+	list-style-type: square;
+	marker-offset: 10px;
+}

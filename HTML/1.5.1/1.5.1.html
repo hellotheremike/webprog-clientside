@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>Bitmap</title>
+	<meta charset="UTF-8" />
+</head>
+<body>
+	<h3>PNG</h3>
+	<img src="img.png" height="100px" widht="100px" alt="PNG">
+	<p>
+		PNG är det formatet man idag använder sig tillmestadels av då man skall skapa webbgrafik. Den har blivit ersättaren för gif då även PNG stödjer en alpha-kanal som gör det möjligt att skapa trasnsparanta bilder.
+		Det betyder att bilden kan vara genomskinligt på de områden man inte vill ha någon färg, se exempel ovan. Detta går tillexempel inte att göra med en bild i JPEG format.<br>
+		PNG är ett format som inte påverkar kvalietén vid komprimering.
+		PNG men även resten av formaten som beskrivs nedan stödjer Interlacing tekniken. Detta betyder att bilder bitvis hämta från servern. Så det första man ser av bildern kan vara i väldigt dålig kvalite, men allt eftersom sidan laddar så får man all bitinformation om bilder och därmed dess ursprungliga kvalite och utseeende.
+	</p>
+	<hr>
+
+	<h3>GIF</h3>
+	<img src="img.gif" height="150px" widht="300px" alt="Gif">
+	<p>
+		Gif formatet var det formatet som var föregångaren till PNG. GIF stödjer även det transparanta områden, vilket är effektivt om man vill skapa ikoner eller likande, där ihåligheterna inte skall ha någon färg utan bestämms av vad som ligger bakom bilden sedan på själva hemsidan.
+		Nackdelen med GIF, som tillslut gjorde att den erasttes med PNG är att den endast stödjer 8bitar per pixel. Detta leder till krafiga färgbegränsningar i bilder.
+
+	</p>
+	<hr>
+
+	<h3>Moving-GIF</h3>
+	<img src="img-moving.gif" alt="Moving GIF">
+	<p>
+		Animerade GIF-bilder är någonting som fortfarande används rätt flitigt. 
+		Det vanligaste användsningsområdet är förmodligen som exempelt, en "loading" snurra som visas när data laddas.
+		En animerad GIF-bild är som en kort film, med en bestämd mängd bilder som ligger i följd som sedan loopas igenom. Storleken på filen påverkas självklart beroende i vilken storlek bilderna är i, men även hur många bilder det finns i animationen påverkar storleken.
+		Som det vanliga GIF formatet så stödjer även en animerad GIF-bild transparanta områden
+	</p>
+	<hr>
+
+	<h3>JPEG</h3>
+	<img src="img.jpeg" height="300px" widht="150px" alt="JPEG">
+	<p>
+		JPEG till skillnad från de ovannämnda bildformaten stödjer varken en alphakanal, eller bibehåller kvalitén vid komprimering. Det är dock ett populärt bildformat till bilder, de flesta digitalkameror generear tillexempel JPEG bilder av fotografierna.
+		Anledningen till att JPEG inte bibehåller kvaliten som de ovannämnda formaten är att den sammanflätar och "chunkar"-ihop områden som har liknande färger. Detta leder till att själva datan i bilden inte behöver information för varje pixel utan kan använda samma kod för flera pixlar. Beroende på vilken kvalié/tolerans man vill rendrera sin bild i förlorar olika mycket i bild kvalité. Förlusten i kvalite reducerar i sin tur filstorlekn.<br>
+		Progresivitet är en form av teknik som liknar interlacing. Alltså att bilder laddas bitvis. Vilket get ett förstautkast av bilden som gör det möjligt att någorlunda indentifiera vad det skall föreställa, allt eftersom bilden laddas så ökar kvaliten och datan.
+	</p>
+	<hr>
+
+</body>
+</html>

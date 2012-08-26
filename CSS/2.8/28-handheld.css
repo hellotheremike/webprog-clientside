@@ -1,0 +1,69 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:bold);
+@import url(http://fonts.googleapis.com/css?family=Audiowide);
+@font-face {
+    font-family: 'ChunkFiveRegular';
+    src: url('font/Chunkfive-webfont.eot');
+    src: url('font/Chunkfive-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/Chunkfive-webfont.woff') format('woff'),
+         url('font/Chunkfive-webfont.ttf') format('truetype'),
+         url('font/Chunkfive-webfont.svg#ChunkFiveRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+*{margin: 0; padding: 0;}
+body{font-family: Droid Sans;font-size: 14px; color: #242424;
+background-color: rgba(125,205,255, 0.2);
+}
+#wrapper{
+	width:100%;
+	min-height: 700px;
+	height: auto;
+}
+#wrapper pre{
+	margin: 5px 0 5px 0;
+	padding:7px;
+	background: #636363;
+	border:1px solid #838383;
+	box-shadow: 0 2px 10px 1px #B5B5B5;
+	color: #EDEDED;
+}
+#wrapper h1{
+	font: bold 8em 'Droid Sans', sans-serif;
+	color: transparent;
+    background-color: rgba(82,96,117,0.4);
+    -webkit-background-clip: text;
+    text-shadow: rgba(255,255,255,0.5) 0 5px 6px, rgba(255,255,255,0.4) 1px 3px 3px;
+}
+#wrapper p{
+	font: normal 0.85em 'Droid Sans', sans-serif;
+	margin: 20px;
+}
+#wrapper > ul{
+	margin: 5px 0 5px 0;
+	background: #636363;
+	border:1px solid #757575;
+	box-shadow: 0px 2px 10px 1px #B5B5B5;
+	list-style: none;
+	color: #EDEDED;
+}
+#wrapper > ul > li{
+	position: relative;
+	padding:7px;
+	margin: 5px;
+	border-bottom: 1px dotted #757575;
+}
+#wrapper > li:last-child{
+	border: none;
+}
+.box{
+	margin:10px 0 10px 0;
+	position:relative;
+	width:60px;
+	height:30px;
+	display: block;
+	background-color: rgb(255,255,255);
+}
+.clear{clear: both;}
+.center{text-align: center;}

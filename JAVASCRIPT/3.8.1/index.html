@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>HTML5 Geolocation</title>
+<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script>
+    
+    if(navigator.geolocation) {
+        function initMap(position) {
+            var point = new google.maps.LatLng(position.coords.latitude, position.coords.longitude)
+            
+            var options = {
+                zoom: 13,
+                center: point,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+            }
+           
+            mapDiv = document.getElementById("map")
+            map = new google.maps.Map(mapDiv, options)
+            marker = new google.maps.Marker({
+                position: point,
+                map: map,
+                title: "Your location is here"
+            });
+        }
+
+        function errorHandler(err) {
+		  if(err.code == 1) {
+		    alert("Error: Access is denied!");
+		  }else if( err.code == 2) {
+		    alert("Error: Position is unavailable!");
+		  }
+		}
+		function showLocation(position) {
+		  var latitude = position.coords.latitude;
+		  var longitude = position.coords.longitude;
+		  alert("Latitude : " + latitude + " Longitude: " + longitude);
+		}
+
+		function errorHandler(err) {
+		  if(err.code == 1) {
+		    alert("Error: Access is denied!");
+		  }else if( err.code == 2) {
+		    alert("Error: Position is unavailable!");
+		  }
+		}
+		function getLocationUpdate(){
+
+		   if(navigator.geolocation){
+		      // timeout at 60000 milliseconds (60 seconds)
+		      var options = {timeout:60000};
+		      geoLoc = navigator.geolocation;
+		      watchID = geoLoc.watchPosition(showLocation, 
+		                                     errorHandler,
+		                                     options);
+		   }else{
+		      alert("Sorry, browser does not support geolocation!");
+		   }
+		}
+		function stopWatch(){
+		   geoLoc.clearWatch(watchID);
+		}
+		var options = {maximumAge:60000, timeout:5000, enableHighAccuracy:true}
+        navigator.geolocation.getCurrentPosition(initMap, errorHandler, options);
+    }
+</script>
+<style>
+#map {
+    width:800px;
+    height:500px;
+    border:1px solid #efefef;
+    margin:auto;
+    -moz-box-shadow:5px 5px 10px #000;
+    -webkit-box-shadow:5px 5px 10px #000;
+}
+</style>
+</head>
+
+<body>
+<div id="map"></div>
+<form>
+     <input type="button" onclick="getLocationUpdate();"  
+                             value="Watch Update"/>
+     <input type="button" onclick="stopWatch();"  
+                             value="Stop Watch"/>
+   </form>
+</body>
+</html>

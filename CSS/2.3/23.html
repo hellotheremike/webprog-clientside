@@ -1,0 +1,113 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<link rel="stylesheet" type="text/css" href="23.css">
+	<meta charset="UTF-8" />
+	<title>Uppgift 2.3 Marginaler, kantlinjer och paddning</title>
+</head>
+	<body>
+		<h1>Uppgift 2.3 Marginaler, kantlinjer och paddning</h1>
+		<p>
+			Boxmodellen innom webblayout är alla ytor som ett element tar upp och innehåller. Det behöver nödvändigtvis inte bara vara det man ser som är det som tar plats. Låt oss föreställa oss en box. Boxen har en grön färg med en orange kant, då tycker man att kanten är det yttre på denna yta men så behöver det inte vara.
+			<br>
+			Utanför den oranga kanten så kan det finnas ett genomskinligt område, ett område som inte kan innehålla någon information men det finns där, detta området ställs in med hjälp av margin attributet, och det fungerar som att man ställer in avståndet till det närliggande objektet i den riktningen.
+			<br>
+			Lika som att man tror att det är kanten som är det yttre så kan man tro att det innanför kanten är all disponibel yta innanför boxen, men även här kan amn modifiera detta med hjälp av padding. Padding är ett sätt att vidga ytan i fråga, och öka avståndet mellan kanten och den faktiskt yta där innehåll kan leva.
+			<br>
+			I och med detta så finns det alltås fyra ytor varav två är synliga och endast en yta är avsatt för innehåll.
+		</p>
+		<p>
+			Något man kan lära sig fort och som reducerar antalet rader kod och som enligt mig ger med lättläslig kod är att istället för att använda -top, -bottom, -left, -right följdattributen at exempelvis margin, skriver man istället margin: 10px, 5px, 3px, 5px;.
+			<br>
+			Detta betyder kort och gott att man skriver in alla -top, -bottom, -left, -right attribut på en rad. Där värdena är margin: top, right, bottom, left. Dessa shorthand attribut fungerar på många CSS regler, och är den teknik jag kommer använda mig av. Skriver man endast margin: 20px så kommer den regeln gälla för alla sidor.
+		</p>
+		<ul>
+			<li>
+				margin - Denna attribut bestämmer avståndet till nästa element i den riktning man väljer. Det kan uppstå problem om inte förälderobjetet hat nångot positionsattribut, det som händer är att elementet i fråga inte finner någon referenspunkt att förflytta sig ifrån. Se exempel
+				<div class="box marginExample">	</div>
+			</li>
+			<li>
+				border - Detta attribut ställer man in hur man vill att ens kantlinje skall se ut, jag väljer alltid att sammskriva färg, stil och storlek utnder endast border-attributet. Om jag inte vill komma åt specifika saker som att ta bort en kantlinje på något ellement som ärvt in det. Se exempel hur det går till
+				<div class=" box borderExample"></div>
+			</li>
+			<li>
+				padding - Padding bestämmer hur mycket avstånd man vill ha emellan kantlinjen och innehållet. Se exempel
+				<div class=" box paddingExample">
+					innehållet går inte ända ut till kanten
+				</div>
+			</li>
+			<li>
+				outline - Detta attribut ger liknde resultat som border bara att detta attribut lägger sig utanpå boxen, se exempel.
+				<div class=" box outlineExample"></div>
+			</li>
+		</ul>
+		<p>
+			Det är viktigt att man kan välja när och hur man vill visa vissa saker, det finns lite olika sätt att bestämma vad och hur man ska visa information. Vi går igenom dessa tillvägagångssätt nedan
+		</p>
+		<ul>
+			<li>
+				Visibility - Detta attribut ger dig möjligheten att dölja element, men ändå göra så att de bibehåller sin plats och utrymme. Om du kollar i utvecklingsverktyget så ser du att det finns en dold div-box under denna text.
+				<div class=" box visibilityExample"></div>
+			</li>
+			<li>
+				clip - CSS3 attrbut som gör det möjligt att specificera form och storlek av det element som skall visas. Ellementet klipps därmed till den dimension. Se exempel.
+				<div class=" box">
+					<div class=" box clipExample">
+					clipclipclipclipclipclipclipclip
+					</div>
+				</div>
+			</li>
+			<li>
+				display - gör det möjligt att dölja och visa element. Skilnaden mellan visibility och display är att ett dolt objekt i display attributet tar inte upp någon plats. Om du kollar i utvecklingsverktyget så ser du att det finns en dold div-box under denna text.
+				<div class=" box displayExample"></div>
+			</li>
+			<li>
+				overflow - Gör det möjligt att bestämma hur man skall handskas med barn element som är större än sina föräldrar. Skalla man kunna skrolla eller dölja? Se exempel.
+				<div class=" box overflowExample">
+					overflowoverflowoverflowoverflowoverflow
+				</div>
+			</li>
+		</ul>
+
+		<p>
+			Följande stycke går vi  igenom hur man kan modifiera och stilsätter sina boxar med diverse CSS3 regler.
+		</p>
+		<ul>
+			<li>
+				RGBA - RGBA står för RedGrenBlueAplha, där alpha är det intressanta. En alphakanal gör det möjligt att ställa in transparans, någonting som är nytt för CSS3. Exempel på element nedan med RGBA regel.
+				<div class=" box rgbaExample_1"></div>
+				<div class=" box rgbaExample_2"></div>
+			</li>
+			<li>
+				opacity - Denna regel har funnits ett tag och i många fall väldigt lik rgba, skillnaden är att här kan man ställa in opacitet på vadsomhelst. Nackdelen är att det även påverkar alla barn element, någonting som kan ställa till det. Men helt klart ett effektivt attribut om använt på rätt sätt. Se exempel
+				<div class=" box opacityExample">
+					opacity
+				</div>
+			</li>
+			<li>
+				border-radius - Gör det möjligt att göra rundande hörn på element. Någonting som blev väldigt besvärligt att åstakomma med CSS i CSS2. Se exempel.
+				<div class=" box radiusExample"></div>
+			</li>
+			<li>
+				multipla bakgrundsbilder - I CSS3 är det nu möjligt att ge samma element flera olika bakgrundsbilder. Ett effektivt sätta att när man vill bygga flexibla och snygga grafiska inslag. Se exempel.
+				<div class=" box bgExample"></div>
+			</li>
+			<li>
+				box-shadow - Gör det möjligt att ge en box en verklig skugga, detta var man tvungen att åstakomma med bilder i CSS2, men i CSS3 kan man skapa väligt effektiva och snygga effekter med denna nya attribut.
+				<div class=" box shadowExample"></div>
+			</li>
+			<li>
+				linear-gradient - Ger en linjär gradient bakgrundsbild, även detta var man tvungen att göra i bilder förr i tiden. Fördelen med denna attribut är att den är dynamiskt anpassande till storleken på boxen, något som gör det väldigt  mycket effektivare än bilder och öppnar helt nya möjligheter.
+				Prolemet är att enskilda weblässare än så länge behöver sina egna specifika relger.
+				Se exempel.
+				<div class=" box linearGradientExample"></div>
+			</li>
+			<li>
+				radial-gradient - en cirkulär gradient, väldigt lik linear-gradient förutom att den är cirukulär istället. 
+				Prolemet är att enskilda weblässare än så länge behöver sina egna specifika relger.
+				Se exempel
+				<div class=" box radialGradientExample"></div>
+			</li>
+		</ul>
+	</body>
+</html>

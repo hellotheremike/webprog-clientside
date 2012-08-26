@@ -1,0 +1,87 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<meta charset="UTF-8" />
+	<title>Uppgift 2.1 Grunderna i CSS 3</title>
+</head>
+	<body>
+		<h1>Uppgift 2.1 Grunderna i CSS 3</h1>
+		<p>
+			Css, eller cascade stylesheet som förkorningen står för är ett sätt att stilsätta HTML element. Man kan skriva CSS-koden direkt i HTML-filen.<br>
+			Detta kan vara bra om man vill labba och testa saker fort, men nackdelen är att CSSkoden endast är giltig i den HTMLfilen, vilket om man vill ha samma stil på flera sidor är väldigt osmidigt då man måste ändra i alla filer. Istället så har man löst det genom att ha en alldeles egen CSSfil som man i alla HTMLfiler lätt kan referera till. Detta gör så att du kan använda samma stil och regler i alla HTMLfiler.
+		</p>
+		<p>
+			Css kod är som regler för de specifika identifierarna man skriver koden för. Det finns då sätt att effektivisera sitt kodande i CSS(eller ett enormt hinder) och det är genom arv.
+			<br>
+			Om jag exempelvis sätter regler på på p-taggen att alla p-taggar skall använda sig utav typsnittet Arial kommer det ärvas ner till alla andra p-taggar som kan ligga djupare i en selektor struktur, exempelvis:
+<pre>
+p{
+	font-family: Arial;
+}
+
+
+#wrapper p{
+	/*Behöver här inte ange font-family: arial då det ärvs in från den yttre regeln*/
+	color: orange;
+}
+#wrapper p.bold{
+	font-weight: bold;
+}
+.redBackground{
+	background-color: red;
+}
+p[class=bold]{
+	color: #838383;
+}
+
+</pre>
+		Detta är även valid Cascade Style Sheet kod, låt oss bryta ner det.
+		</p>
+		<p>
+			Man sätter regler på specifika HTML-element med hjälp av selektorer som kan vara i olika former: tagg-, attribut-, klass-, id- och barn-selektorer
+			<br>
+			Taggselektorer är i vårat exempel <b>p</b>. skriver man en selector utan . eller # framför så antyder man att det är en tagg regeln är skriven för.
+			<br>
+			Attribut har vi i vårat exempel när vi skriver <b>p[class=bold]</b>.Då antyder jag att alla p objekt som har klassen bold skall även få färgen #838383;
+			<br>
+			Class selektorer är regler som kan användas flera gånger per sida. i vårat exempel är .redBackground en klass, klasser skrivs alltså med en punkt innan klassnamnet.
+			<br>
+			ID selektorer är menat att endast användas en gång per HTML-fil. Då de aggerar som refferenspunkter för webbläsaren och deras unika ID är en egenskap som är både kraffull och nödvändig i vissafall. I vår exempelkod är #wrapper en id-selector, då # är identifieraren för att det är en ID regel.
+			<br>
+			Barn-selektorer är regler som ligger i en djupare stuktur. I exempelkoden så gäller endast .bold innuti #wrapper. Skapar jag en p-tagg utanför #wrappern i HTML dokumentet och anger att den skall ha klassen bold kommer den regel inte gälla.
+		</p>
+		<p>
+			Med hjälp av CSS bygger man upp skal för hemsidan där information skall placeras, detta kan man föreställa sig att man har en massa lådor i varrandra för att bygga upp struktur. För att få denna struktur att se ut som man vill måste man på ette effektivt kunna ange storlkar på såväl dessa boxar som text. Enheterna man använder sig av är in, cm, mm, pt, pc, em, ex, px och %.
+			<br>
+			<ul>
+				<li>
+					IN - Står för tumm, är en fixstorlek.
+				</li>
+				<li>
+					CM - Står för Centimeter, är en fixstorlek.
+				</li>
+				<li>
+					MM - Står för Millimeter, är en fixstorlek.
+				</li>
+				<li>
+					PT - Punkter, punkter används vanligen innom tryck då det är punkter per tum. Punkter liknar PX på väldigt många sätt så det är en fix storlek. 1pt är lika mycket som 1/72 tumm
+				</li>
+				<li>
+					PC - Står för Pica, och är en fixstorlek. 1pc är lika mycket som 12pt
+				</li>
+				<li>
+					EM - Är en skala för den ärvda storleken, då em1.0 skulle representera den nerärvda storlken, säg oss en fontstolek på 12px. Om man istället skriver em2.0 blir storlken 24px.
+				</li>
+				<li>
+					PX - Bestämmer antalet pixlar på ett objekt. Detta värde är fix och oberoende av förälder element
+				</li>
+				<li>
+					% - Storleken bestämms av förälder elementet, sätter jag att höjden av en box ska vara 50% blir den hälften så hög som sin förälder
+				</li>
+			</ul>
+		</p>
+		<p>
+			Ett CSS dokument äruppbyggd med regler för specifika selektorer. Designen av din CSSkod är mycket individuell och någonting man lär sig med tiden vad som är bäst. Jag strukturerar upp koden så att regler som tillhör sidhuvudet är högt upp i dokumentet, bodyrelger i mitten och footer relger längst ner. Generella relger och teckensitts stilar placerar jag oftast högst upp i dokumentet. Jobbar även väldigt flitigt med barn selektorer för att kunna få ett så strukturerat och konsikvent dokument som möjligt.
+		</p>
+	</body>
+</html>

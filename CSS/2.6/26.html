@@ -1,0 +1,65 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+	<link rel="stylesheet" type="text/css" href="26.css">
+	<meta charset="UTF-8" />
+	<title>Uppgift 2.6 Tabeller och formulär</title>
+</head>
+	<body>
+		<h1>Uppgift 2.6 Tabeller och formulär</h1>
+		<p>
+			På denna sida skall vi gå igenom hur man bygger och designar tabeller och formulär.
+		</p>
+		<ul>
+			<li>
+				table-layout - gör det möjligt att sätta storleken på celler utan att ta hänsyn till innehållests storlek
+			</li>
+			<li>
+				border-collapse - gör så att kanterna kolapsar till en singelkant, istället för att som den vid standard skapar en yttre kant.
+			</li>
+			 <li>
+			 	border-spacing - bestämmer avsåndet mellan närliggande celler.
+			 </li>
+			 <li>
+			 	caption-side - Bestämmer var din captiontext skall positioneras utifrån tabellen som referenspunkt
+			 </li>
+			 <li>
+			 	empty-cells - gör det möjligt att manipulera celler som saknar data.
+			 </li>
+			 <li>
+			 	Exempel
+			 	<table class="tableExample">
+			 		<caption>Test tabell</caption>
+			 		<thead>
+			 				<td>Head - 1</td>
+			 				<td>Head - 2</td>
+			 				<td>Head - 3</td>
+			 		</thead>
+			 		<tbody>
+			 			<tr>
+			 				<td>Cell - 1</td>
+			 				<td>Cell - 2</td>
+			 				<td>Cell - 3</td>
+			 			</tr>
+			 			<tr>
+			 				<td>Cell - 1</td>
+			 				<td>Cell - 2</td>
+			 				<td></td>
+			 			</tr>
+			 		</tbody>
+			 	</table>
+			 </li>
+		</ul>
+		<p>
+			Nedan skall vi ge ett exempel på hur man ska stilsätta ett formulär
+		</p>
+		<form class="formExample">
+			<fieldset>
+				<legend>Exempelformulär</legend>
+				<p><label for="username">Username</label><input type="text" placeholder="username" name="username"></p>
+				<p><label for="password">Password</label><input type="password" placeholder="password" name="password"></p>
+				<p><input type="submit" value="login"></p>
+			</fieldset>
+		</form>
+	</body>
+</html>

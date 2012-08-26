@@ -1,0 +1,121 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="javascript.js" type="text/javascript"></script>
+	<meta charset="UTF-8" />
+	<title></title>
+</head>
+<body>
+	<h1>Externt länkad JavaScript-fil och dess fördelar</h1>
+	<P>
+		Förderlarna med att ha en extern länkad scriptfil är samma sak som när det kommer till CSS, det är bra att separera kod på det sättet för att skapa struktur och ordning i dokumentet. Men framförallt då dagens webbsidor har en struktur av att vara väldigt konsikventa och har en rödtråd så är det mycke kod som återanvänds på alla sidor, därför är det bra att ha en gemensam scriptfil för att slippa göra ändringar på fler ställe. Det förenklar även felsökning och korrigering av kod då man inte bli distraherad av massa omkringliggande HTML-kod.
+	</P>
+
+	<h1>Satser</h1>
+	<P>
+		Satser är en sammling kod som utför olika typer av opperatorion, det kan finnas if-satser som vägleder programmet att utföra rätt val vid rätt tillfälle. Det finns loop-satser som är till för att loopa över exempelvis en viss datamängd. En sats kan även vara en sammling kod som i slutändan tilldelar en variabel ett värde genom att kombinera värden fårn olika datakällor.
+	</P>
+
+	<h1>Datatyper</h1>
+	<P>
+		Datatyper är olika värden som representerar olika typer av data, därav namnet Datatyper. Det finns många olika datatyper men de 'simpla' datatyperna är Tecken, Heltal & Flyttal.
+		Datatyper kan endast vara den datatypen men kan i vissa fall kombineras(concatenate) med andra om språket tilllåter det, i javascript har man väldigt stor frihet när det kommer till detta.
+		<br>
+	</P>
+
+	<h1>Variabler och arrayer</h1>
+	<P>
+		Variabler är hållare för valfri datatyp eller datastruktur, variabeln blir referensen till den biten data och som gör det möjligt att återanvända och hålla koll på datan. En variabel kan endast hålla en datatyp/datastruktur åt gången
+		<br>
+		Arrayer är en enkel datastruktur som är en lista som håller olika data. I Javascript kan en array hålla olika datatyper men vanligtvis så håller en array endast en typ av data, exempelvis Intar. Varje position i arrayen är unik och håller sin egen data och den datan kan nås med positionens unika adress.
+		<br>
+		Exempel:
+	</P>
+<pre>
+var arrayVariable = [2,3,4,5]
+for(var x in arrayVariale){
+	alert(arrayVariale[x])
+}
+//Resulterar i 4popups med texterna 2 på den första, 3på den andra osv.
+</pre>
+
+	<h1>Operatorer och stränghantering</h1>
+	<P>
+		Opperatorer är det simpla mattematiska opperationer såsom dividerat & addition, subtraktion, multiplikation. Dessa opperationer kan man i beroende på datatyp använda sig av. Addition är en av de opperationer man använder oftast, exempelvis när man addera två strängvärden eller adderar två tal. Olika datatyper kan använda sig av olika många opperationer.
+		<br>
+		Exempel:
+	</p>
+<pre>
+var firstName = "Mikael";
+var lastName = "Hallgren";
+var YourName = firstName + " " + lastName;
+alert('Wellcome, ' + YourName);
+</pre>
+	<p>
+		Stränghantering är opperationer och metoder strängklassen har. Dessa metoder gör det möjligt att få ut antalet tecken i en sträng. Eller dela upp strängen i en array genom att skapa en ny listposition så fort den stöter på ett speciellt tecken osv. Stränghantering är någonting som skiljer sig från språk till språk.
+		<br>
+		Exempel:
+	</P>
+<pre>
+var words = my.name.is.mikael;
+var length = words.length;
+var list = words.split('.');
+alert(list[3]+":"+length)
+//Resulterar i en popup med texten 'mikael:17'. Där 'mikael' är den 3e positionen i listan och 17 är antalet tecken innan uppdelningen.
+
+</pre>
+
+	<h1>Flödeshantering (if-satser och lopar)</h1>
+	<P>
+		Vilkor eller 'conditions', är villkor som man skapar för att dirigera och vägleda exekvering av kod. Exempelvis kan man skapa en sats som om den är sann endast exikveras om man kör en speciell webbläsare, låt oss säga InternetExplorer.
+		<br>
+		Exempel:
+	</P>
+<pre>
+if(1 < 2){
+	alert("Condition is true")
+}
+else{
+	alert("Condition is false");
+}
+</pre>
+	<p>
+		Vilkor är ett sätt att vägleda sin kod och är ett måste, men när man vill kontollera flera saker fast med olika värden så löser man det med loopar. Loopar är som det låter, den ittererar tills dess villkor för loopen inte längre uppfylls. Det finns olika typer av loopar nämligen for-loopar samt while-loopar.
+		<br>
+		Exempel:
+	</p>
+<pre>
+for(var i = 0; i < 10; i++){
+	if(i < 5){
+		alert("Mindre än 5")
+	}
+	else{
+		alert("Större än 5")
+	}
+
+}
+
+//Resulterar i 10popups där texten för de första 5 har texten "Mindre än 5" och de resterande 5 texten "Större än 5"
+</pre>
+	<h1>Funktioner</h1>
+	<P>
+		Funktioner är kappslade styckern kod som kan exikveras när de blir kallade på med sitt funktionsnamn följt av paranteser. Detta är det första steget att dela upp sin kod och skapa struktur, detta är även en intressant lösning om man exempelvis vill köra samma block av kod flera gånger under dokumentets livstid.
+		<br>
+		Exempel:
+	</P>
+<pre>
+function greeting(yourName){
+	alert('Hello, ' + yourName);
+}
+
+greeting('Mikael');
+//Resulterar i en popup som har texten 'Hello, Mikael'
+</pre>
+
+	<h1>Reguljära uttryck</h1>
+	<P>
+		Reguljära uttryck är ett sätt att utgöra avancerade mönstermatchningar i strängar. Vid träff på dessa matchningar är det upp till programmeraren vad opperationen skall vara, om man skall ersätta teckenena mot några andra, räkna antalet mönstermatchningar eller ta bort mönstret från strängen.
+	</P>
+
+</body>
+</html>

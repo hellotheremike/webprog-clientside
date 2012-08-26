@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>Form</title>
+</head>
+<body>
+	<form>
+		<fieldset>
+			<legend>Logindata with validation</legend>
+			<input type="text" placeholder="username" required="required" title="Enter a username" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$"/><br>
+			<input type="password" placeholder="password" required="required" title="Enter a password 8 letters long" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$"/><br>
+			<textarea rows="5" cols="20">Personal description goes here...</textarea><br>
+		</fieldset>
+		<fieldset>
+		<legend>Experience</legend>
+			<input type="checkbox" name="webb" value="HTML" />
+			I know HTML<br>
+			<input type="checkbox" name="webb" value="CSS" /> 
+			I know CSS<br>
+			<input type="checkbox" name="webb" value="Django" /> 
+			I know Django<br>
+		</fieldset>
+		<fieldset>	
+			<legend>Gender</legend>	
+			<input type="radio" name="gender" value="male" /> Male<br />
+			<input type="radio" name="gender" value="female" /> Female
+		</fieldset>
+		<fieldset>
+			<legend>Buttons</legend>
+			<input type="submit" value="submit" autofocus="autofocus" >
+			<input type="image" src="loader.gif" alt="image button">
+			<input type="reset" >
+			<input type="button" value="Button" >
+		</fieldset>
+		<fieldset>
+			<legend>Select favorite in list</legend>
+			<select>
+				<optgroup label="Client">
+					<option value="HTML">HTML</option>
+					<option value="CSS">CSS</option>
+					<option value="Javascript">Javascript</option>
+					<option value="Compass">Compass</option>
+				</optgroup>
+				<optgroup label="Server">
+					<option value="PHP">PHP</option>
+					<option value="C#">C#</option>
+					<option value="Django">Django</option>
+					<option value="Rubyonrails">Rubyonrails</option>
+				</optgroup>
+			</select>
+		</fieldset>
+	</form>
+	<form action="http://people.dsv.su.se/~pierre/courses/05_ass/ip2/2/2.2.1/perl/example.cgi
+" method="get">
+		<fieldset>
+			<legend>HTML5 Input</legend>
+			<input type="email"><br>
+			<input type="url"><br>
+			<input type="number"><br>
+			<input type="range" min="-30" max="50" value="0" step="10" name="Range Val" list="powers"><br>
+			<datalist id="powers">
+				<option value="0">
+				<option value="-30">
+				<option value="30">
+				<option value="+50">
+			</datalist>
+			<input type="datetime"><br>
+			<input type="date"><br>
+			<input type="month"><br>
+			<input type="week"><br>
+			<input type="time"><br>
+			<input type="submit" value="submit" autofocus="autofocus">
+		</fieldset>
+	</form>
+	<form method="POST" enctype="multipart/form-data" action="http://people.dsv.su.se/~pierre/courses/05_ass/ip2/2/2.2.1/perl/example.cgi">
+		<fieldset>
+			<legend>HTML5 file uppload</legend>
+			<input type="file" name="file"><br>
+			<input type="submit" value="send" autofocus="autofocus">
+		</fieldset>
+	</form>
+
+</body>
+</html>

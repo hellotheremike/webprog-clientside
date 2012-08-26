@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title></title>
+</head>
+<body>
+		<table border="1">
+			<tr>
+				<td id="head"><h1>Uppgift 1</h1></td>
+			</tr>
+			<tr>
+				<td>
+					<h2>Doctype, viktig information för webbläsaren</h2>
+					<p>
+						Först och främst så skall HTML filen innehålla en doctype. Detta är information osm är nödvändig för webbläsaren då den talar om vilken HTML-version den skall tolka filen som. Om man glömmer bort denna så kan det uppstå fel i vissa webbläsare då den inte vet hur den skall tolka viss HTML-kod.
+						Doctyp koden ser ut enligt följande:
+						<br><br>
+						&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML <b>4.01</b> Frameset//EN" "http://www.w3.org/TR/html4/frameset.dtd"&gt;
+						<br><br>
+						Fiffrorna 4.01 som är i fettext är de som avgör vilken HTML-verison webbläsaren ska läsa ifrån.
+						<br>
+						Men för HTML5 skriver man bara,<br><br>
+						&lt;!DOCTYPE html&gt;
+					</p>
+
+					<h2>HTML GRUNDSTRUKTUR</h2>
+					<p>
+						Efter att ha anvigit doctype måste man bygga upp huvudstrukturen för hemsidan. Denna huvudstruktur som står för det yttre skalet av HTML-koden består av minimalt fyra taggar för en komplett sida, dessa taggar är &lt;html&gt;, &lt;head&gt;, &lt;title&gt; och &lt;body&gt;.<br>
+						Taggar skrivs i följande struktur:
+					</p>
+<pre>
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;
+			//Sidnamn
+		&lt;/title&gt;
+	&lt;/head&gt;
+	&lt;body&gt;
+		//Här placeras koden som kommer genera grafik med hjälp av webbläsaren	
+	&lt;/body&gt;
+&lt;html&gt;
+</pre>
+					
+
+					<h2>META</h2>
+					<p>
+						Metataggar är information som hjälper sökmotorer att tolka vad en sida innehåller för information. Denna information tolkas och beroende på hur nyckelorden överrenstämmer med sökordet ger de olika hög relevansnivå.
+						Denna teknik var väldigt vanlig förr men stora sökmmotorer som Google går inte enbart på metainformationen utan går på ett form av poängsystem som bygger på hur ofta din sida talas om på andra sidor.
+					</p>
+					<p>
+						En meta-tag ser ut enligt följande.
+					</p>
+					<p>
+						&lt;meta name="keyword" content="HTML" /&gt;
+					</p>
+					<h4>Author</h4>
+					<p>
+						För att märka upp ditt htmldokument som ditt eget kan man lägga in metainformarion som deffinierar skaparen med hjälp av följande meta-tag.
+					</p>
+					<p>
+						&lt;meta name="author" content="Mikael Hallgren" /&gt;
+					</p>
+					<h4>Description</h4>
+					<p>
+						Det finns yttligare meta-tag information. Meta-taggar som beskriver din hemsida, exempelvis.
+					</p>
+					<p>
+						&lt;meta name="description" content="A website that describes the HTML-basics" /&gt;
+					</p>
+					<h4>Charset</h4>
+					<p>
+						Metainfomation kan också vara nödvändig informarion för webläsaren. meta-taggen <b>http-equiv</b> är en tagg som deffinierar vilken tecken-kodning dokumentet skall använda sig av. Teckenkodningen är den som avgör vilka tecken som som skall visas och hur den skall tolka informationen. Jag rekomenderar UTF-8 då de stödjer de flesta specialltecken som ÅÄÖ. Denna tag skrivs enligt följande:
+					</p>
+					<p>
+						&lt;meta http-equiv="content-type" content="text/html; charset=UTF-8" /&gt;
+					</p>
+					<p>
+						Men i HTML5 har man förenklat denna process då det räcker med följande kod.
+					</p>
+					<p>
+						&lt;meta charset="UTF-8"&gt;
+					</p>
+					<h4>Refresh</h4>
+					<p>
+						Man kan även ange yttligare information som påverkar hur sidan uppträder. Man kan med refresh indikatorn ange hur ofta sidan skall laddasom. Detta skrivs enligt följande.
+					</p>
+					<p>
+						&lt;meta http-equiv="refresh" content="300" /&gt;
+					</p>
+					<h4>Robots</h4>
+					<p>
+						Meta-taggen <b>robots</b> är en tag som gör det möjligt för användare att bestämma om sidan ska eller inte skall indexeras, alltså vara synliga på sökmotorer.
+					</p>
+					<p>
+						&lt;meta name="robots" content="NOINDEX, NOFOLLOW" /&gt;
+					</p>
+					<h4>Generator</h4>
+					<p>
+						En metataggenerator är en mjukvara som genererar metataggar för en webbsida.
+					</p>
+
+					<h2>Text</h2>
+					<p>
+						Det är viktigt att man i HTML kan formatera och edditera sin text på ett effektivt sätt, någonting som gjort ännu effektivare i HTML5. Vi kommer gå över de nya, men likasåväl de gamla text-taggarna
+					</p>
+					<h4>Abbr</h4>
+					<p>
+						abbr-taggen är ett sätt att ge ett tooltip för förkortning som FN.
+						Håll musen <b><abbr title="Detta är en beskrivning för ordet HÄR">HÄR</abbr></b> för att se tooltippen för det ordet.
+					</p>
+					<p>
+						Taggen skrivs enligt följande.
+					</p>
+					<p>
+						&lt;abbr title="Detta är en beskrivning för ordet HÄR"&gt;HÄR&lt;/abbr&gt;
+					</p>
+					<h4>Acronym</h4>
+					<p>
+						acronym-taggen liknar abbr-taggen i mångt och mycket men är istället avsatt för att användas på förkotningar som <b><abbr title="Laughing out loud">LOL</abbr></b>.
+					</p>
+					<p>Taggen skrivs på följande sätt:</p>
+					<p>
+						&lt;acronym title="Laughing out loud"&gt;LOL&lt;/acronym&gt;
+					</p>
+					<h4>Address</h4>
+					<p>
+						Adress-taggen är till för att underlätta representationern av kontaktinformation för dokumentet eller en post. Som följande:
+					</p>
+						<address>
+							Written by <a href="mailto:mail@mail.com">Mikael Hallgren</a>.<br /> 
+							Google.com<br />
+							Kista<br />
+							Sverige
+						</address>
+					
+					<p>
+						Det man gör är att helt enkelt skriver informationen innom &lt;address&gt; taggen.
+					</p>
+					<h4>Blockquote</h4>	
+					<p>
+						Blockquote är en tagg som gör det möjligt att uppmärksamma stora block av text, block som i någon mån skall ge illusionen av att vara citerade. Webbläsare enligt standard indenterar denna text.
+					</p> 
+						<blockquote>
+						enligt följande
+						<br>
+						&lt;blockquote&gt;
+						<br>
+							Här placeras texten som skall uppmärksammas.
+						<br>
+						&lt;/blockquote&gt;
+						</blockquote>
+					
+					<h4>br</h4>
+					<p>
+						br-taggen är till för att göra enkla radbrytningar
+					</p>
+					<h4>cite</h4>
+					<p>
+						cite-taggen används för att indikera citeringar vilket ger följande effekt.<br>
+						<cite>Jag är en citerad text.</cite>
+					</p>
+					<h4>code</h4>
+					<p>
+						code-taggen används för att indikera och stilsätta att det är programmeringskod som visas.<br>
+						Exempelvis såhär:<br>
+						<code>public int age(int ageIn){ ... }</code>
+					</p>
+					<h4>dfn</h4>
+					<p>
+						dfn-taggen är till för att definiera och stilsätta att det är en definierad term som är innom taggarna. Deffinitionen är vanligtvis en industrispecifik term som används för förstagången i texten.<br>
+						Detta är ett exempel på hur dfn-taggen kan användas:<br><br>
+						Innom webbutveckling på klientsidan är 
+						<dfn>HTML</dfn> det man bör börja kika på.<br><br>
+						HTML är i detta fall innom dfn-taggarna.
+					</p>
+					<h4>div</h4>
+					<p>
+						Div-taggen är till för att bygga block och bygga strukturen för din design av hemsidan. Idag styr man div-taggar genom css för att uppnå maximal effektivitet.
+					</p>
+					<div contentEditable=True>
+						Texten kan även edditeras..
+					</div>
+					<p>
+						Med hjälp av attributet contentEditable=True så kan man edditera innehållet i div-boxen.
+					</p>
+					<h4>em</h4>
+					<p>
+						em-taggen är ett sätt att betona ett ord eller mening.
+						Det ger följande effekt.<br>
+						<em>Detta är betonad text</em>
+					</p>
+					<h4>H-taggar</h4>
+					<p>
+						För att bygga rubruker använder man sig av h-taggarna, de går från h1, h2, h3, h4, h5 och h6.
+						<br>
+						De ger följande effekt.
+					</p>
+					<h1>H1</h1><h2>H2</h2><h3>H3</h3>
+					<h4>H4</h4><h5>H5</h5><h6>H6</h6>
+
+					<h4>kbd</h4>
+					<p>
+						Denna tag är till för att beskriva och identifiera skrivbordstangenter. <br>
+						Exempelvis:<br>
+						För att stänga processer i windows tryck ner följande tangenter,<br> 
+						<kbd>CTRL</kbd> + <kbd>ALT</kbd>+<kbd>DELETE</kbd>
+					</p>
+					<h4>p</h4>
+					<p>
+						p-taggen är paragraftaggen som är till för att kappsla in textstycken. Detta är ett av de alldra vanligaste HTML-taggarna.
+					</p>
+					<h4>pre</h4>
+					<p>
+						Denna tag fungerar som så att den tolkar och skriver ut texten utefter hur det ser ut i HTML-dokumentet. Det är välldigt effektift när man vill visa och och stukturera upp kod i ett HTML-dokument, exempelvis enligt följande.
+					</p>
+<pre>
+for(int x = 0; x &lt; array.size; x++){
+	System.out.println(x);
+}
+</pre>
+					
+					<h4>q</h4>
+					<p>
+						q-taggen är till för att markera korta stycker som citat. Till skilland från blockquote som är till för större textstycken.<br>
+						Exempel:<br>
+						<q>
+							That's one small step for a man, one giant leap for mankind
+						</q>
+					</p>
+					<h4>samp</h4>
+					<p>
+						samp står för sample och är därmed avsedd för Exempel resultat från exempelvis ett program.
+					</p>
+					<h4>span</h4>
+					<p>
+						Ett beteende som liknar div-taggen i mångt och mycket. Det som är standard användningen för span är att gruppera element med attirbuten inline. Detta gör det möjligt att göra följande
+					</p>
+						<p>Exempel text <span style="font-weight: bold;">med</span> olika <span style="color: orange; font-size: 26px;">stilar</span> på orden</p>
+					
+					<h4>strong</h4>
+					<p>
+						strong-taggen gör texten i fråga, som standard, till fetstil. Ungefär <strong>såhär</strong>.
+					</p>
+					<h4>var</h4>
+					<p>
+						var-taggen är till för att beskriva och definiera en variabel. Exempel:<br>
+						<var>Variabel</var>
+					</p>
+					<h2>Länkar</h2>
+					<p>
+						Länkar är de textstycken som ser till att man kan navigera sig mellan olika sidor. Dessa länkar kan se ut på olika sätt, de kommer diskuteras här.
+					</p>
+					<h4>Relativalänkar</h4>
+					<p>
+						En relativ länk är en länk som pekar på filer eller destinationer innom samma domän.<br>
+						Exempel:<br>
+						<code>
+							&lt;a href="HTML_Basics.html"&gt; Länk till denna fil &lt;/a&gt;
+						</code>
+						<br>
+						Resultat:
+						<br> 
+						<a href="HTML_Basics.html">Länk till denna fil</a>
+					</p>
+
+					<h4>Absolutalänkar</h4>
+					<p>
+						Absoluta länkar är innehåller hela länkinformationen. Med domän och fil.<br>
+						Exempel:<br>
+						<code>
+							&lt;a href="http://google.se"&gt; Länk till Google &lt;/a&gt;
+						</code>
+						<br>
+						Resultat:
+						<br> 
+						<a href="http://google.se">Länk till Google</a>
+					</p>
+					<h4>Länk till ankare</h4>
+					<p>
+						Ankarlänkar är länkar som länkar till elemnt i HTML-strukturen. Ett exempel på när detta är användart är om man vill bygga ett navigerbart index. Ett bra sätt att göra är att ange ID't på elementet som adress, som följande:<br>
+						<code>
+							&lt;a href="#head"&gt; Länkar till toppen av dokumentet &lt;/a&gt;
+						</code>
+						Resultat:<br>
+						<a href="#head">Länk till Google</a>
+					</p>
+					<h4>Bildlänk</h4>
+					<p>
+						Man kan även skapa länkar där själva länken är en bild. Man skapar denna länk enligt följande.
+						<br>
+						<code>
+							&lt;a href="http://google.se"&gt; 
+								&lt;img src="link.png" /&gt;
+							&lt;/a&gt;
+						</code>
+						Resultat:
+						<br>
+						<a href="http://google.se"><img src="link.png" alt="Img link to google"></a>
+					</p>
+					<h4>Länk till olika protokoll</h4>
+					<p>
+						Det är även möjligt att länka till olika protokoll, exempelvis kan man länka till en ftp-server på följande sätt.
+						<br>
+						<code>
+							&lt;a href="ftp://adress.se"&gt; 
+								Länk till min FTP-server
+							&lt;/a&gt;
+						</code>
+					</p>
+					<h4>Mail-länk</h4>
+					<p>
+						För att effektivisera sitt surfande kan man skapa länkar som automatiskt startar ens epostklient eller vidare dirigerar en till sitt mailkonto, beroende på webbläsare. Dessa länkar ser ut enligt följande.
+						<br>
+						<code>
+							Maila mig &lt;a href="mailto:mail@mail.com"&gt; 
+							Här
+							&lt;/a&gt;
+						</code>
+						Resultat<br>
+						Maila mig <a href="mailto:mail@mail.com"> här</a>
+					</p>
+					<h2>Listor</h2>
+					<p>
+						För att stukturera information i listor finns det ett par olika tillvägagångssätt.
+					</p>
+					<h4>Definitionslista</h4>
+					<p>
+						dl är taggen som deffinierar en Definitionslista, som är en oordnadlista. Lista i sin tur innehåller dt-taggar beskriver elementet i listan. Den har i sin tur en undertagg som beskriver elementet i den listan. Koden ser ut enligt följande.
+					</p>
+<pre>
+&lt;dl&gt;
+	&lt;dt&gt;Item 1&lt;/dt&gt;
+		&lt;dd&gt;Item-1-1&lt;/dd&gt;
+		&lt;dd&gt;Item-1-2&lt;/dd&gt;
+	&lt;dt&gt;Item 2&lt;/dt&gt;
+		&lt;dd&gt;Item-2-1&lt;/dd&gt;
+		&lt;dd&gt;Item-2-2&lt;/dd&gt;
+&lt;/dl&gt;
+</pre>
+						Resultat:<br>
+						<dl>
+							<dt>Item 1</dt>
+								<dd>Item-1-1</dd>
+								<dd>Item-1-2</dd>
+							<dt>Item 2</dt>
+								<dd>Item-2-1</dd>
+								<dd>Item-2-2</dd>
+						</dl>
+					
+					<h4>Oordnadlista</h4>
+					<p>
+						Ul(Unordered List) är en oordnad lista är en lista som är onumrerad och bara har en ikon före varje element i listan. Listan är uppbyggd med av själva listan som i sin tur innehåller listelement. Koden ser ut enligt följande
+					</p>
+<pre>
+&lt;ul&gt;
+	&lt;li&gt;Item 1&lt;/li&gt;
+	&lt;li&gt;Item 2&lt;/li&gt;
+	&lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+					Resultat: 
+					
+					<ul>
+						<li>Item 1</li>
+						<li>Item 2</li>
+						<li>Item 3</li>
+					</ul>			
+					
+					<h4>Ordnadlista</h4>
+					<p>
+						En ordnad lista är en lista med nummrerade listelement. Dess uppbyggnad är densamma som en oordnadlista men istället för att använda sig för ul-taggen använder man sig av ol-taggen, som följade exempel:
+					</p>
+<pre>
+&lt;ol&gt;
+	&lt;li&gt;Item&lt;/li&gt;
+	&lt;li&gt;Item&lt;/li&gt;
+	&lt;li&gt;Item&lt;/li&gt;
+&lt;/ol&gt;
+</pre>
+					Resultat: 
+					<br>
+					<ol>
+						<li>Item</li>
+						<li>Item</li>
+						<li>Item</li>
+					</ol>	
+					
+					<h4>Tabell</h4>
+					<p>
+						Tabeller är effektiva strukturer att presentera data i. Man börjar med att öppna en table-tag som i sin tur innehåller fem förstabarns taggar caption, colgroup, thead, tbody och tfoot.
+						<br>
+						Colgroup innehåller taggen col som deffinierar stilen på en kolumn.
+						<br>
+						Thead innehåller tr-taggen som står för table-row. Raden i sin tur innehåller tablehead-celler th.
+						<br>
+						Tbody och tfoot har samma uppbyggnad som thead förutom att man istället anväder sig utav td-taggar istället för th-taggar. Se följande 
+						exempel:<br>
+					</p>
+<pre>
+&lt;table width=300 border="1"&gt;
+	&lt;aption&gt;Tabell exempel&lt;/caption&gt;
+	&lt;colgroup&gt;
+		&lt;col style="background: orange;"&lt;/col&gt;
+	&lt;/colgroup&gt;
+	&lt;thead&gt;
+		&lt;tr&gt;
+			&lt;th&gt;Tabellhuvud ett&lt;/th&gt;
+			&lt;th&gt;Tabellhuvud två&lt;/th&gt;
+		&lt;/tr&gt;
+	&lt;/thead&gt;
+	&lt;tbody&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Data-cell  ett&lt;/td&gt;
+			&lt;td&gt;Data-cell två&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tbody&gt;
+	&lt;tfoot&gt;
+		&lt;tr&gt;
+			&lt;td&gt;Footcell ett&lt;/td&gt;
+			&lt;td&gt;Footcell två&lt;/td&gt;
+		&lt;/tr&gt;
+	&lt;/tfoot&gt;
+&lt;/table&gt;
+</pre>
+						<table border="1">
+							<caption>Tabell exempel</caption>
+							<colgroup>
+								<col style="background: orange;" />
+								<col style="background: pink;" />
+							</colgroup>
+							<thead>
+								<tr>
+									<th>Tabellhuvud ett</th>
+									<th>Tabellhuvud två</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Data-cell  ett</td>
+									<td>Data-cell två</td>
+								</tr>
+							</tbody>
+							<tfoot>
+								<tr>
+									<td>Footcell ett</td>
+									<td>Footcell två</td>
+								</tr>
+							</tfoot>
+						</table>
+					
+					<h2>Bild</h2>
+					<p>
+						För att bädda in en bild i din hemsida använder man sig av IMG-taggen. Det kan se ut enlig följande. Där alt-attributet är till för att beskriva bilden i fråga.
+						<br>
+						<code>
+							&lt;img src="link.png" alt="Bild på google logga"&gt;
+						</code>
+						<br>
+						Resultat:<br>
+						<img src="link.png" alt="Bild på google logga">
+					</p>
+					<h2>Bildkartor</h2>
+					<h4>Area</h4>
+					<p>
+						Area-taggen för det möjligt att sätta events på kordinater i en bild. Koden kan se ut som följande.
+					</p>
+<pre>
+	&lt;area shape="rect" coords="20,10,105,43" href="#bottom" alt="Go down!" /&gt;
+</pre>
+					<p>
+						coords="20,10,105,43" är det som definierare kordinaterna, samt höjd och bred på i detta fallet en rektangel. 
+						Men det räcker inte endast med Area-taggen, taggen måste vara wrappad i en map-tagg. I mapptaggen kan man i sin tur ha flera area-taggar.
+					</p>
+					<h4>map</h4>
+					<p>
+						Map-taggen är den tagg som man sammlar area-taggarna i. Taggen namnges med ett unikt namn. Detta namn används sedan i själva bilden man vill placera kordinaterna på med hjälp av attributet 'usemap'. Koden kan se ut som följande.
+					</p>
+<pre>
+	&lt;img src ="area.jpg" width="300" height="250" alt="Navigering" usemap ="<b>#navigation</b>" /&gt;
+
+	&lt;map name="<b>navigation</b>"&gt;
+		&lt;area shape="rect" coords="20,10,105,43" href="#bottom" alt="Go down!" /&gt;
+		&lt;area shape="circle" coords="155,120,22" href="#head" alt="Go up" /&gt;
+	&lt;/map&gt;
+</pre><br>		
+						Resultat:<br>				
+						<img src ="area.jpg" width="300" height="250" alt="Navigering" usemap ="#navigation" />
+						<map name="navigation">
+						  <area shape="rect" coords="20,10,105,43" href="#bottom" alt="Go down!" />
+						  <area shape="circle" coords="155,120,22" href="#head" alt="Go up" />
+						</map>
+					
+				</td>
+			</tr>
+			<tr>
+				<td id="bottom"><h1>SLUT</h1></td>
+			</tr>	
+		</table>
+</body>
+</html>

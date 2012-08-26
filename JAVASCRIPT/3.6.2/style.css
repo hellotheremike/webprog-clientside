@@ -1,0 +1,66 @@
+
+@import url(http://fonts.googleapis.com/css?family=Codystar);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+
+body{
+	background: gray;
+	text-align: center;
+}
+#holder { border: 10px dashed #ccc; width: 300px; height: 300px; margin: 20px auto;}
+#holder.hover { border: 10px dashed #333; }
+input{
+	padding: 20px;
+}
+#drop_zone{
+	font-family: "Codystar";
+	font-size: 40px;
+	padding: 50px 0px 40px 0;
+	text-align: center;
+	width: 300px;
+	height: 100px;
+	display: block;
+	background: rgba(255,255,255, 0.1);
+	border: 8px dotted #D6D6D6;
+	border-radius: 10px;
+	margin: 0px auto;
+	position: relative;
+	color: #EBB010;
+	text-shadow: 0 0 8px #FFF;
+	transition: all 0.5s;
+	-moz-transition: all 0.5s; 
+	-webkit-transition: all 0.5s; 
+	-o-transition: all 0.5s; 
+}
+#drop_zone.hover{
+	background: gray;
+	color: #FFF;
+	background: rgba(255,255,255, 0.5);
+		transition: all 0.5s;
+	-moz-transition: all 0.5s; 
+	-webkit-transition: all 0.5s; 
+	-o-transition: all 0.5s; 
+}
+
+#output{
+	transition: all 0.5s;
+	-moz-transition: all 0.5s; 
+	-webkit-transition: all 0.5s; 
+	-o-transition: all 0.5s; 
+	width: 500px;
+	height: 100px;
+	margin: 10px auto;
+	color: #FFF;
+
+}
+#output pre{
+	text-align: left;
+}
+#output p{
+	font-family: "Droid Sans";
+	text-align: center;
+}
+#output img{
+	width: 500px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px #FFF;
+}

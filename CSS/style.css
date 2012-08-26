@@ -1,0 +1,17 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:bold);
+*{margin: 0; padding: 0;}
+body{font-family: 'Droid Sans';font-size: 14px; color: #242424;background-color:#DEDEDE;}
+.box{
+	margin:10px 0 10px 0;
+	position:relative;
+	width:60px;
+	height:30px;
+	display: block;
+	background-color: rgb(255,255,255);
+}
+ul{
+	margin: 20px;
+}
+.clear{clear: both;}
+.center{text-align: center;}

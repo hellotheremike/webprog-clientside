@@ -1,0 +1,62 @@
+
+.tableExample {
+	margin:20px 0 0 0;
+	color: #fff;
+	border-collapse:separate;
+	empty-cells:hide;
+	caption-side: bottom;
+	border-spacing: 5px;
+	table-layout: auto;
+}
+.tableExample, th,td{
+	border:1px solid black;
+	padding: 3px;
+}
+.tableExample caption{
+	font-style:italic;
+	padding: 3px;
+}
+.formExample{
+
+	width: 250px;
+}
+.formExample label{
+	width: 70px;
+	margin-top: 2px;
+	float: left;
+	text-align: right;
+	margin-right: 5px;
+	display: block
+}
+.formExample input[type=text], input[type=password]{
+	border:1px solid #838383;
+	border-radius: 3px;
+	padding: 3px;
+	font-size:13px;
+}
+.formExample input[type=submit]{
+	position: relative;
+	margin-left:75px;
+	border: 1px solid #838383;
+	background: #3870D1;
+	border-radius: 4px;
+	padding: 4px;
+	font-family: Droid Sans;
+	font-size: 12px;
+	color: #fff;
+	/*-webkit-transition: all .3s ease-out;*/
+
+}
+.formExample input[type=submit]:hover{
+	background-color: #4B81DE;
+	/*-webkit-transition: all .3s ease-out;*/
+}
+.formExample input[type=submit]:active{
+	box-shadow: inset -1px -2px 3px -1px #344B73;
+	background-color: #4B81DE;
+	/*-webkit-transition: all .3s ease-out;*/
+}
+.formExample legend{
+
+	margin-left: 20px;
+}

@@ -1,0 +1,13 @@
+#wrapper > ul{
+	background-image: linear-gradient(bottom, #767ce3 0%, #9CFFBB 100%);
+	background-image: -o-linear-gradient(bottom, #e3c876 0%, #9CFFBB 100%);
+	background-image: -moz-linear-gradient(bottom, #7688E3 0%, #9CFFBB 100%);
+	background-image: -webkit-linear-gradient(bottom, #de76e3 0%, #9CFFBB 100%);
+	background-image: -ms-linear-gradient(bottom, #dfe376 0%, #9CFFBB 100%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0, #de76e3),color-stop(1, #9CFFBB));
+}

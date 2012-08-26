@@ -1,0 +1,19 @@
+.imgExample{
+	float:left;
+	margin: 5px;
+	position:relative;
+}
+.bgExample{
+	width:256px;
+	height:256px;
+	background-color: transparent;
+	background-image:  url("http://www.amsn-project.net/images/download-linux.png"), url("http://www.veryicon.com/icon/png/Object/Activity%20Monitor/Matrix.png");
+	background-repeat: no-repeat;
+	background-position: center center, left top;
+}
+}
+ul{
+	margin: 0px;
+}
+.clear{clear: both;}
+.center{text-align: center;}

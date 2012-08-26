@@ -1,0 +1,61 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:bold);
+
+*{
+	margin:0;
+	padding: 0;
+}
+a{
+	color: #FFF;
+	text-decoration: none;
+	font-family: 'Droid Sans';
+}
+a:hover{
+	color:#E3528C;
+}
+#menu{
+	margin-top: 20px;
+	position: relative;
+	height: 40px;
+	list-style: none;
+	text-align: center;
+}
+
+#menu > li{
+	display: inline-block;
+	position: relative;
+	min-width: 80px;
+	background: #4E91DE;
+	padding: 10px ;
+	margin-left: -4px;
+	border: 1px solid #2F6EB5;
+	border-right: none;
+	z-index: 10;
+}
+#menu > li:first-child{
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+#menu > li:last-child{
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: 1px solid #2F6EB5;
+}
+#menu > li ul{
+	display: none;
+	border: 1px solid #2F6EB5;
+	border-top: none;
+	z-index: 1;
+	padding: 0 10px 0 10px ;
+	min-width: inherit;
+	position: absolute;
+	list-style: none;
+	top:36px;
+	left:-1;
+	text-align: center;
+	background: inherit;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+#menu > li ul li{
+	padding:5px 0 5px 0;
+}

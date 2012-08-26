@@ -1,0 +1,71 @@
+
+.marginExample{
+	margin: 20px;
+}
+.borderExample{
+	border: 4px solid orange;
+	border-top: 2px solid #000;
+	border-bottom: none;
+}
+.paddingExample{
+	height: auto;
+	color: #000;
+	padding:20px 10px 20px 10px;
+}
+.outlineExample{
+	border:2px solid #000;
+	outline:2px dotted #fff;
+}
+.visibilityExample{
+	visibility: hidden;
+}
+.clipExample{
+	margin: 0;
+	color: #000;
+	position:absolute;
+	background-color:green;
+	clip:rect(0px,30px,25px,0px);
+}
+.displayExample{
+	display: none;
+}
+.overflowExample{
+	color: #000;
+	height: 60px;
+	overflow: auto;
+}
+.rgbaExample_1{
+	left:30px;
+	position:absolute;
+	background-color: rgba(505,200,250, 0.5);
+}
+.rgbaExample_2{
+	background-color: rgba(125,200,255, 0.5);
+}
+.opacityExample{
+	opacity:0.5;
+	color: #838383;
+}
+.radiusExample{
+	border-radius: 5px;
+}
+.bgExample{
+	width:256px;
+	height:256px;
+	background-color: transparent;
+	background-image:  url("http://www.amsn-project.net/images/download-linux.png"), url("http://www.veryicon.com/icon/png/Object/Activity%20Monitor/Matrix.png");
+	background-repeat: no-repeat;
+	background-position: center center, left top;
+}
+.shadowExample{
+	box-shadow: 0px 0px 10px 1px #000;
+}
+.linearGradientExample{
+	background-image: -moz-linear-gradient(bottom, #5CBFAF 100%, #E6AC7A 41%);
+	background-image: -webkit-gradient(linear,left bottom,left top,color-stop(1, #5CBFAF),color-stop(0.41, #E6AC7A));
+}
+.radialGradientExample{
+   	background: -moz-radial-gradient(center, ellipse cover, #e6ac7a 0%, #5cbfaf 48%, #e6ac7a 100%); 
+   	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#e6ac7a), color-stop(48%,#5cbfaf), color-stop(100%,#e6ac7a));
+	background: -webkit-radial-gradient(center, ellipse cover, #e6ac7a 0%,#5cbfaf 48%,#e6ac7a 100%);
+}

@@ -1,0 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+*{margin:0;padding:0;}
+#mapDiv {
+    width:500px;
+    height:300px;
+    border:1px solid #efefef;
+    margin:auto;
+    -moz-box-shadow:5px 5px 10px #000;
+    -webkit-box-shadow:5px 5px 10px #000;
+}
